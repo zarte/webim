@@ -1,7 +1,12 @@
 # WebIm 
 Supply Customer Service 
 ## 界面预览
-
+插件样式  
+![1.JPG](https://raw.githubusercontent.com/zarte/webim/main/1.JPG)  
+部署版样式  
+![2.JPG](https://raw.githubusercontent.com/zarte/webim/main/2.JPG)  
+部署版移动端样式以及表情样式   
+![7.JPG](https://raw.githubusercontent.com/zarte/webim/main/7.JPG)  
 ## 快速上手
 拷贝install目录下文件 
 ### 本地部署模式
