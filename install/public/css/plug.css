@@ -1,0 +1,99 @@
+#hbywebim_btn{
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #5bc0de;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 50px;
+    cursor:pointer;
+}
+#hbywebim_btn:hover{
+    box-shadow: 0 0 15px #1cb1de;
+}
+
+#hbywebim_chat{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 250px;
+    height: 500px;
+    box-shadow: 0 0 10px #5bc0de;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0 10px 10px;
+    display: none;
+}
+#hbywebim_chat .title{
+    margin: 0;
+    font-size: 22px;
+}
+#hbywebim_chat .chat-main .contentdiv{
+    width: 100%;
+    height: 340px;
+    box-shadow: 0 0 10px #dddddd inset;
+    padding: 5px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+#hbywebim_chat .chat-main .operadiv {
+    margin-top: 8px;
+}
+#hbywebim_chat .chat-main .operadiv #sendcontent{
+    width: 100%;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+#hbywebim_chat .chat-main .chatoperadiv{
+    text-align: right;
+}
+#hbywebim_chat .chat-main .chatoperadiv  button{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #32c7f4;
+    color: #ffffff;
+    margin-left: 10px;
+}
+.somsgdiv p,.omsgdiv p{
+    margin: 0;
+    font-size: 12px;
+}
+.somsgdiv .username,.omsgdiv .username{
+    margin-left: 5px;
+}
+.somsgdiv pre,.omsgdiv pre{
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow-x: auto;
+}

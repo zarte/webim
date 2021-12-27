@@ -1,0 +1,134 @@
+.contentdiv, #userlist{
+    height: 600px;
+    overflow: auto;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#userlist{
+}
+.operadiv{
+    margin-top: 10px;
+}
+#userlist ul{
+    padding: 0;
+    margin: 5px;
+}
+#userlist ul li{
+    list-style: none;
+    margin-top: 5px;
+    cursor:pointer;
+    position: relative;
+}
+#userlist ul li.on{
+    background-color: #5bc0de;
+    color: #ffffff;
+}
+/*
+#userlist ul li:hover{
+    background: #4bc6df;
+    color: #ffffff;
+}
+*/
+#userlist ul li img{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+#userlist ul li span{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.omsgdiv .username,.somsgdiv .username{
+    margin-left: 5px;
+}
+.omsgdiv img,.somsgdiv img{
+    width: 25px;
+    height: 25px;
+}
+.somsgdiv{
+    text-align: right;
+}
+
+.chatoperadiv{
+    text-align: right;
+    position: relative;
+}
+.btn-default.focus, .btn-default:focus{
+    outline: aliceblue;
+}
+#emojidiv{
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    position: absolute;
+    left: -255px;
+    top:-240px;
+    display: none;
+}
+#emojibtn{
+    position: relative;
+}
+#emojibtn:focus #emojidiv{
+    display:block;
+}
+#emojidiv ul{
+    padding: 5px;
+    width: 300px;
+    overflow-y: auto;
+    height: 200px;
+}
+#emojidiv li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    float: left;
+    padding-top: 10px;
+}
+#emojidiv li:hover{
+    background-color: #cccccc;
+}
+#emojidiv img{
+    width: 30px;
+    height: 30px;
+}
+
+#userlist ul li .badge{
+    display: block;
+    position: absolute;
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    left: -5px;
+    top: -5px;
+    padding: 0;
+}
+.showkefu{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .contentdiv, #userlist {
+        height: 520px;
+    }
+    #userlist {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: none;
+        background: #dddddd;
+    }
+    .showkefu{
+        display: inline-block;
+    }
+}

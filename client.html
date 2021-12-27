@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charSet="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebIm v1.0</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/css/index.css"/>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div  style="display: none">
+            <span>当前在线人数:</span>&nbsp;<span id="onlinenum"></span>
+        </div>
+        <div class="visible-xs">
+            <span>当前客服:</span>&nbsp;<span id="kefuname"></span>
+        </div>
+    </div>
+    <div class="row" id="chatmain">
+        <div class="col-sm-9  col-xs-12 contentdiv">
+            <!--
+            <div class="omsgdiv">
+                <p><span>2020-10-11 22:21:33</span><span class="username">测的是的</span></p>
+                <p class="content"><pre>点十六分九点十六分dsfasdf</pre></p>
+            </div>
+            <div class="somsgdiv">
+                <p><span>2020-10-11 22:21:33</span><span class="username">我</span></p>
+                <p class="content"><pre>点十六分九点十六分dsfasdf</pre></p>
+            </div>
+            <div class="somsgdiv">
+                <p><span>2020-10-11 22:21:33</span><span class="username">我</span></p>
+                <p class="content"><pre>点十六分九点十六分dsfasdf</pre></p>
+            </div>
+            <div class="omsgdiv">
+                <p><span>2020-10-11 22:21:33</span><span class="username">测的是的</span></p>
+                <p class="content"><pre>点十六分九点十六分dsfasdf</pre></p>
+            </div>
+            <div class="somsgdiv">
+                <p><span>2020-10-11 22:21:33</span><span class="username">我</span></p>
+                <p class="content"><pre>点十六分九点十六分dsfasdf</pre></p>
+            </div>
+            <div class="omsgdiv">
+                <p><span>2020-10-11 22:21:33</span><span class="username">测的是的</span></p>
+                <p class="content"><pre>点十六分九点十六分dsfasdf</pre></p>
+            </div>
+            <div class="omsgdiv">
+                <p><span>2020-10-11 22:21:33</span><span class="username">测的是的</span></p>
+                <p class="content"><pre>点十六分九点十六分dsfasdf</pre></p>
+            </div>
+            <div class="omsgdiv">
+                <p><span>2020-10-11 22:21:33</span><span class="username">测的是的</span></p>
+                <p class="content"><pre>点十六分九点十六分dsfasdf</pre></p>
+            </div>
+            -->
+        </div>
+        <div class="col-sm-3" id="userlist">
+            <ul>
+                <span>无客服</span>
+                <!--
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li> <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li> <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+                <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li> <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li> <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li> <li>
+                    <img src="https://cdn.v2ex.com/avatar/2f05/c870/493137_normal.png?m=1592210155">
+                    <span>是独立房间阿萨的浪费的实力</span>
+                </li>
+    -->
+            </ul>
+        </div>
+    </div>
+    <div class="row operadiv">
+        <div class="col-sm-12  col-xs-12">
+            <textarea class="form-control" rows="3" id="sendcontent" placeholder="表情代码[:smile:]"></textarea>
+        </div>
+        <div class="col-sm-12  col-xs-12  chatoperadiv" style="margin-top:5px;">
+            <button type="button" class="btn btn-info showkefu" onclick="showkefu()" >客服列表</button>
+            <button type="button" class="btn btn-default" id="emojibtn">
+                <div id="emojidiv">
+                    <ul></ul>
+                </div>
+                <span class="glyphicon glyphicon-th-list"></span>表情
+            </button>
+            <button type="button" class="btn btn-info" onclick="sendmsg()">发送</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="loginModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                   登录
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form role="form" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 col-xs-2 control-label">昵称</label>
+                        <div class="col-sm-8 col-xs-10">
+                            <input type="text" class="form-control" id="name" placeholder="请输入昵称(支持中文英文数字6~20)" name="name">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="loginbtn"  data-loading-text="Loading..." >
+                     登录
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+</body>
+<script src="/public/js/client.js"></script>
+<script>
+
+
+</script>
+</html>
